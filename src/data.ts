@@ -7,7 +7,7 @@ export const personalData = {
   linkedin: "https://linkedin.com/in/alvinigop",
   twitter: "https://twitter.com/alvinpogi",
   about: {
-    intro: "Hi, I'm Alvin — a passionate software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
+    intro: "Hi, I'm Alvin — an Aspiring software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
     paragraphs: [
       "With a strong foundation in modern web technologies, I specialize in creating seamless user experiences through clean code and thoughtful design. My journey in software development is driven by curiosity and a commitment to continuous learning.",
       "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in writing code that not only works but is maintainable and scalable.",
@@ -37,7 +37,7 @@ export const projects = [
     title: "AI-Powered Analytics Dashboard",
     description: "Real-time analytics platform with predictive insights and customizable data visualizations for enterprise clients.",
     tech: ["React", "TypeScript", "D3.js", "Python"],
-    sourceUrl: "https://github.com/alexmorgan/analytics-dashboard",
+    sourceUrl: "https://github.com/kaelfxxxc/analytics-dashboard",
     size: "large",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     title: "E-Commerce Platform",
     description: "Headless commerce solution with seamless checkout and inventory management.",
     tech: ["Next.js", "Stripe", "MongoDB"],
-    sourceUrl: "https://github.com/alexmorgan/ecommerce-platform",
+    sourceUrl: "https://github.com/kaelfxxxc/ecommerce-platform",
     size: "medium",
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
     title: "Design System Library",
     description: "Comprehensive component library with accessibility-first approach.",
     tech: ["React", "Storybook", "Tailwind"],
-    sourceUrl: "https://github.com/alexmorgan/design-system",
+    sourceUrl: "https://github.com/kaelfxxxc/design-system",
     size: "medium",
   },
   {
@@ -61,7 +61,7 @@ export const projects = [
     title: "Mobile Fitness Tracker",
     description: "Cross-platform app for workout tracking and health metrics visualization.",
     tech: ["React Native", "Firebase"],
-    sourceUrl: "https://github.com/alexmorgan/fitness-tracker",
+    sourceUrl: "https://github.com/kaelfxxxc/fitness-tracker",
     size: "small",
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
     title: "AI Chat Interface",
     description: "Conversational UI with natural language processing capabilities.",
     tech: ["React", "OpenAI", "WebSocket"],
-    sourceUrl: "https://github.com/alexmorgan/ai-chat",
+    sourceUrl: "https://github.com/kaelfxxxc/ai-chat",
     size: "small",
   },
   {
@@ -77,7 +77,7 @@ export const projects = [
     title: "Task Management Tool",
     description: "Collaborative workspace with real-time updates and team management features.",
     tech: ["Next.js", "PostgreSQL", "tRPC"],
-    sourceUrl: "https://github.com/alexmorgan/task-manager",
+    sourceUrl: "https://github.com/kaelfxxxc/task-manager",
     size: "small",
   },
 ];
