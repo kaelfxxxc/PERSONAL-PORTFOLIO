@@ -3,9 +3,9 @@ export const personalData = {
   title: "Aspiring Software Engineer",
   description: "Crafting exceptional digital experiences with modern web technologies. Specialized in React, TypeScript, and performance optimization.",
   email: "yapalvin90@gmail.com",
-  github: "https://github.com/alexmorgan",
-  linkedin: "https://linkedin.com/in/alexmorgan",
-  twitter: "https://twitter.com/alexmorgan",
+  github: "https://github.com/kaelfxxxc",
+  linkedin: "https://linkedin.com/in/alvinigop",
+  twitter: "https://twitter.com/alvinpogi",
   about: {
     intro: "Hi, I'm Alvin — a passionate software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
     paragraphs: [
