@@ -29,7 +29,7 @@ export default function About() {
     {
       icon: User,
       title: "Who I Am",
-      description: "A software engineer passionate about creating impactful digital solutions.",
+      description: "An Aspiring software engineer about creating impactful digital solutions.",
     },
     {
       icon: Code,
