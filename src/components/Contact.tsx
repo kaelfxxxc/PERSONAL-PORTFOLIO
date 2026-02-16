@@ -76,7 +76,7 @@ export default function Contact() {
                 <MapPin className="text-fuchsia-400" size={20} />
               </div>
               <h3 className="text-white font-medium mb-2">Location</h3>
-              <p className="text-zinc-400 text-sm">San Francisco, CA</p>
+              <p className="text-zinc-400 text-sm">Mandaue City</p>
             </div>
 
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5">
