@@ -7,7 +7,7 @@ export const personalData = {
   linkedin: "https://linkedin.com/in/alvinigop",
   twitter: "https://twitter.com/alvinpogi",
   about: {
-    intro: "Hi, I'm Alvin — an Aspiring software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
+    intro: "Hi, I'm Alvin Beldad — an Aspiring software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
     paragraphs: [
       "With a strong foundation in modern web technologies, I specialize in creating seamless user experiences through clean code and thoughtful design. My journey in software development is driven by curiosity and a commitment to continuous learning.",
       "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in writing code that not only works but is maintainable and scalable.",
