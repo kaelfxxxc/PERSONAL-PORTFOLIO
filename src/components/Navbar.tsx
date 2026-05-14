@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { navLinks, personalData } from "../data";
+import { scrollToSection } from "../lib/scroll";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
@@ -11,20 +12,15 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detect active section
       const sections = navLinks.map((link) => link.href.substring(1));
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 150 && rect.bottom >= 150;
-        }
-        return false;
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top <= 150 && rect.bottom >= 150;
       });
 
-      if (currentSection) {
-        setActiveSection(currentSection);
-      }
+      if (currentSection) setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -33,17 +29,7 @@ export default function Navbar() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const element = document.getElementById(href.substring(1));
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
+    scrollToSection(href);
   };
 
   return (
@@ -59,7 +45,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <motion.a
             href="#home"
             onClick={(e) => handleNavClick(e, "#home")}
@@ -70,7 +55,6 @@ export default function Navbar() {
             {personalData.name.split(" ")[0]}
           </motion.a>
 
-          {/* Nav Links */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
@@ -91,41 +75,28 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Social Links */}
           <div className="flex items-center gap-3">
-            <motion.a
-              href={personalData.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-colors"
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Github size={20} />
-            </motion.a>
-            <motion.a
-              href={personalData.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-colors"
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Linkedin size={20} />
-            </motion.a>
-            <motion.a
-              href={personalData.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-colors"
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Twitter size={20} />
-            </motion.a>
+            <SocialLink href={personalData.github} icon={Github} />
+            <SocialLink href={personalData.linkedin} icon={Linkedin} />
+            <SocialLink href={personalData.twitter} icon={Twitter} />
           </div>
         </div>
       </div>
     </motion.nav>
+  );
+}
+
+function SocialLink({ href, icon: Icon }: { href: string; icon: React.ComponentType<{ size?: number }> }) {
+  return (
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-zinc-400 hover:text-white transition-colors"
+      whileHover={{ scale: 1.1, y: -2 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <Icon size={20} />
+    </motion.a>
   );
 }

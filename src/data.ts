@@ -1,13 +1,13 @@
 export const personalData = {
   name: "Alvin Beldad",
-  title: "Aspiring Software Engineer",
+  title: "Aspiring Web Engineer",
   description: "Crafting exceptional digital experiences with modern web technologies. Specialized in React, TypeScript, and performance optimization.",
   email: "yapalvin90@gmail.com",
   github: "https://github.com/kaelfxxxc",
   linkedin: "https://linkedin.com/in/alvinigop",
   twitter: "https://twitter.com/alvinpogi",
   about: {
-    intro: "Hi, I'm Alvin Beldad — an Aspiring software engineer dedicated to building elegant, performant web applications that solve real-world problems.",
+    intro: "Hi, I'm Alvin Beldad — an Aspiring Web Engineer dedicated to building elegant, performant web applications that solve real-world problems.",
     paragraphs: [
       "With a strong foundation in modern web technologies, I specialize in creating seamless user experiences through clean code and thoughtful design. My journey in software development is driven by curiosity and a commitment to continuous learning.",
       "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in writing code that not only works but is maintainable and scalable.",
@@ -34,18 +34,18 @@ export const techStack = [
 export const projects = [
   {
     id: 1,
-    title: "AI-Powered Analytics Dashboard",
-    description: "Real-time analytics platform with predictive insights and customizable data visualizations for enterprise clients.",
-    tech: ["React", "TypeScript", "D3.js", "Python"],
-    sourceUrl: "https://github.com/kaelfxxxc/analytics-dashboard",
+    title: "HealthBridge: Substance Abuse and Prevention Office MS",
+    description: "A community Health Dashboard System for SAMHSO. Healthbridge is a centralized inventory, service bookings, transpo tracking, report and inter department communication.",
+    tech: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    sourceUrl: "https://healthbridgems.me",
     size: "large",
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
-    description: "Headless commerce solution with seamless checkout and inventory management.",
-    tech: ["Next.js", "Stripe", "MongoDB"],
-    sourceUrl: "https://github.com/kaelfxxxc/ecommerce-platform",
+    title: "A Rent Room: E-commerce Platform",
+    description: " Is a Platform that allows users to rent rooms and manage their bookings.",
+    tech: ["Node.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
+    sourceUrl: "https://a-rent-room.vercel.app",
     size: "medium",
   },
   {
