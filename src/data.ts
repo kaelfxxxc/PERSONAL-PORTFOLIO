@@ -1,7 +1,7 @@
 export const personalData = {
   name: "Alvin Beldad",
   title: "Aspiring Web Engineer",
-  description: "Crafting exceptional digital experiences with modern web technologies. Specialized in React, TypeScript, and performance optimization.",
+  description: "Crafting exceptional digital experiences with modern web technologies. Specialized in React, Node.js, Next.js, TypeScript,PostgreSQL, MERN stack and performance optimization.",
   email: "yapalvin90@gmail.com",
   github: "https://github.com/kaelfxxxc",
   linkedin: "https://linkedin.com/in/alvinigop",
